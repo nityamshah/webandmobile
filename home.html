@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<!-- You may need to extend a 'base.html' template, think Jinja template engine -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ascii Art 1</title>
+    <link rel="stylesheet" type="text/css" href="/static/stylesheets/style.css">
+  </head>
+  <body>
+    <h1>Ascii Art</h1>
+    <form method="post" action="/formPage">
+        <div>
+            <label>Title</label>
+            <input type="text" name="title" value={{title}}>
+            <label>Art</label>
+            <textarea name="art" value={{art}}></textarea>
+        </div>
+        <input type="submit">
+    </form>
+    <div class="error">{{error}}</div>
+    {% for art in arts %}
+       <div class="art">
+       <div class="art-title">{{art[0]}}</div>
+       <pre class="art-body">{{art[1]}}</pre>  
+       </div>
+    {% endfor %}
+  </body>
+</html>

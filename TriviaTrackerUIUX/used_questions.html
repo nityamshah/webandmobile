@@ -1,0 +1,19 @@
+{% extends 'question_base.html' %}
+
+{% block bodycontent %}
+  <h1>All Used Questions</h1>
+  <form method="post" action="/seeUsed">
+    {% for question in questions %}
+      {% if question.used == 1 %}
+        <div class="table">
+          <div class="table-heading">
+            <div class="post-title">{{question.question}}</div>
+            <div class="post-content">{{question.answer}}</div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    <br>
+    <a href="/useAll" class="button">Reset All Questions</a>
+  </form>
+{% endblock %}

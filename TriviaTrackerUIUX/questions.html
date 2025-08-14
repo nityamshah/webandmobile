@@ -1,0 +1,21 @@
+{% extends 'question_base.html' %}
+
+{% block bodycontent %}
+  <h1>All Unused Questions</h1>
+  <form method="post" action="/selected">
+    {% for question in questions %}
+      {% if question.used == 0 %}
+        <div class="table">
+          <div class="table-heading">
+            <div class="post-id">Id: {{question.id}}</div>
+            <div class="post-title">{{question.question}}</div>
+            <div class="post-content">{{question.answer}}</div>
+            <a href="/selectQuestion/{{question.id}}">Select</a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    <input type="text" value="{{selected}}" disabled>
+   <input type="submit">
+  </form>
+{% endblock %}

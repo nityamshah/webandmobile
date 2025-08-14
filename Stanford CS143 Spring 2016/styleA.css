@@ -1,0 +1,31 @@
+html{
+  font-size: 40px;
+  font-family: Tahoma;
+}
+p {
+  height: 100px;
+  width: 100px;
+  border-top: 1px solid #687291;
+  margin: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+p:nth-child(even){
+  background-color: #eeeff2;
+}
+p:nth-child(odd){
+  background-color: #dfe1e7;
+}
+#F{
+  background-color: #687291;
+  border: 4px solid black;
+  line-height: 100px;
+  vertical-align: middle;
+}
+div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

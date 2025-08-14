@@ -1,0 +1,10 @@
+#home>h1{color: red;}
+label{
+  display: block;
+  float: left;
+  width : 120px;    
+  color: blue;
+}
+wimg{
+  height:300px;
+}

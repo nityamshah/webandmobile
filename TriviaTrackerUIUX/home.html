@@ -1,0 +1,19 @@
+{% extends 'question_base.html' %}
+
+{% block bodycontent %}
+  <h1>Home: All Questions</h1>
+    {% for question in questions %}
+      <div class="table">
+        <div class="table-heading">
+          <!-- <div class="post-id">Id: {{question.id}}</div> -->
+          <div class="post-title">{{question.question}}</div>
+          <div class="post-content">{{question.answer}}</div>
+          {% if question.used == 0 %}
+            <div class="used">Not Used!</div>
+          {% else %}
+            <div class="used">Used!</div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'question_base.html' %}
+
+{% block bodycontent %}
+
+  <h1>Add New Question</h1>
+  <form method="post">
+    <label>
+      <div>Question</div>
+      <input type="text" name="question" value="{{question}}">
+    </label>
+    <label>
+      <div>Answer</div>
+      <textarea name="answer">{{answer}}</textarea>
+    </label>
+    <div class="error">{{error}}</div>
+    <input type="submit">
+  </form>
+
+{% endblock %}

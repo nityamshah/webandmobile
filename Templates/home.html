@@ -1,0 +1,39 @@
+{%extends 'base.html' %}
+{%block home%}
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <h1>Signup</h1>
+    <form method = "post" action="/formPage">
+    <table>
+      <tr>
+        <td><label>Username</label></td>
+        <td><input type="text" name="username" value={{user}}></td>
+        <td><span style="color: red"> {{usernameerror}} </span><br></td>
+      </tr>
+
+      <tr>
+        <td><label>Password</label></td>
+        <td><input type="password" name="password"></td>
+        <td><span style="color: red"> {{passworderror}} </span><br></td>
+      </tr>
+        
+      <tr>
+        <td><label>Verify Password</label></td>
+        <td><input type="password" name="verify"><br></td>
+      </tr>
+
+      <tr>
+        <td><label>Email (optional)</label></td>
+        <td><input type="text" name="email" value={{email}}></td>
+        <td><span style="color: red"> {{emailerror}} </span><br></td>
+      </tr>
+
+      <tr>
+        <td><input type="submit"></td>
+      </tr>
+    </table>
+    </form>
+  </body>
+</html>
+ {%endblock%}

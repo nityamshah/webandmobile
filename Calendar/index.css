@@ -1,0 +1,23 @@
+div[id*="wd"]{
+  float: left;
+  margin: 5px;
+}
+div[id*="day"] {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+div[id*="day"]:hover {
+  background-color: pink;
+}
+.weekdays{
+  font-weight: bold;
+}
+.selected {
+  background-color: red;
+}
+.empty{
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,15 @@
+{% extends 'base_post.html' %}
+
+{% block bodycontent %}
+    {% for post in posts %}
+      <div class="post">
+        <div class="post-heading">
+          <div class="post-title">{{post.subject}}</div>
+          <div class="post-id">Id: {{post.id}}</div>
+	  <!-- see strftime.org, %X and %z are blank because its naive -->
+          <div class="post-date">{{post.create_date}}</div>
+        </div>
+        <div class="post-content">{{post.content}}</div>
+      </div>
+      {% endfor %}
+{% endblock %}

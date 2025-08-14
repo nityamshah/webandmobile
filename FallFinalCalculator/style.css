@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.number, .op, #equal {
+  /* ****CSS Feature submission - Sizing and Alignment**** */
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#display {
+  margin: 2px;
+  width: 184px;
+  height: 45px;
+  background-color: darkcyan;
+  border-radius: 5px;
+  /* ****CSS Feature submission - Typography**** */
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: right;
+}
+
+#calculator {
+  width: 207px;
+  height: 255px;
+  background-color: black;
+  border-radius: 10px;
+  /* ****CSS Feature submission - Margins and Padding**** */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#mode {
+  margin: 5px;
+}
+
+.op {
+  font-size: 13px;
+}
+
+#dropdown{
+  margin: 10px;
+}
+
+/* ****CSS Feature submission - Flexbox**** */
+.flex-container {
+  display: flex;
+  /*try inline-flex*/
+  flex-direction: row;
+  /*try row-reverse, column, or column-reverse*/
+  flex-wrap: nowrap;
+  /*try wrap or wrap-reverse*/
+  background-color: red;
+  justify-content: space-between;
+
+}
+
+.flex-container > div {
+  background-color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+

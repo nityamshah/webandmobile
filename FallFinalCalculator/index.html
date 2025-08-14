@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  
+  <script src="script.js"></script>
+  <!-- ****  HTML Feature submission - Header **** -->
+  <h2 id="title">My Fantastic Compsci Website!</h2>
+  <div id = calculator>
+    <!-- ****  HTML Feature submission - Form **** -->
+    <form id = calc>
+      <div id="screen">
+        <input type="text" id="display">
+      </div>
+      <div id="buttons">
+        <!-- ****  HTML Feature submission - Table **** -->
+        <table>
+          <tr>
+            <!-- ****  HTML Feature submission - Buttons **** -->
+            <td><button class="number" form="calc">1</button></td>
+            <td><button class="number" form="calc">2</button></td>
+            <td><button class="number" form="calc">3</button></td>
+            <td><button class="number" form="calc">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="number" form="calc">4</button></td>
+            <td><button class="number" form="calc">5</button></td>
+            <td><button class="number" form="calc">6</button></td>
+            <td><button class="number" form="calc">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="number" form="calc">7</button></td>
+            <td><button class="number" form="calc">8</button></td>
+            <td><button class="number" form="calc">9</button></td>
+            <td><button class="number" form="calc">/</button></td>
+          </tr>
+          <tr>
+            <td><button class="number" form="calc">0</button></td>
+            <td><button id="equal" form="calc">=</button></td>
+            <td><button class="op" form="calc" type="reset">clear</button></td>
+            <td><button class="number" form="calc">*</button></td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </div>
+
+  <!-- ****  Bootstrap Feature submission - Alert**** -->
+  <div class="container">
+    <div class="alert alert-primary" role="alert">
+      try switching this calculator between dark and light mode!
+    </div>
+  </div>
+
+  <!-- ****  Bootstrap Feature submission - Bootstrap Grid**** -->
+  <form id="mode">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" style="background-color:lavender;">
+          <input type="radio" id="dark" name="mode" value="Dark Mode">
+          <label for="dark">Dark Mode</label><br>
+        </div>
+        <div class="col-sm-6" style="background-color:lavenderblush;">
+          <input type="radio" id="light" name="mode" value="Light Mode">
+          <label for="light">Light Mode</label><br>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- ****  Bootstrap Feature submission - Image Embedding**** -->
+  <div class="container">
+    <img src="data:image/png;base64,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" class="img-fluid" alt="Responsive image">
+  </div>
+
+  <!-- ****  Bootstrap Feature submission - Dropdown**** -->
+  <div id = "dropdown" class="container">
+    <label for="favOpDropdown"> Select Your Favorite Operation:</label>
+    <select class="form-select" id="favOpDropdown">
+      <option disabled selected value> -- select an option -- </option>
+      <option value="addition">addition</option>
+      <option value="subtraction">subtraction</option>
+      <option value="multiplication">multiplication</option>
+      <option value="division">division</option>
+    </select>
+  </div>
+
+  <div class="flex-container">
+      <div>C</div>
+      <div>O</div>
+      <div>D</div>  
+      <div>E</div>
+  </div>
+  
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

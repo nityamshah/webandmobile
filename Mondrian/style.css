@@ -1,0 +1,113 @@
+
+body, html {
+    background-color: #f6f6f6;
+}
+
+
+/*color classes. These are the CSS classes that will color in the blocks*/
+
+.red {
+    background-color: #cc3333;   
+}
+
+.blue {
+    background-color: #2f7fd8;   
+}
+
+.yellow {
+    background-color: #feda09;   
+}
+
+.black {
+    background-color: #393939;   
+}
+
+#canvas {
+  height: 400px;
+  width: 400px;
+  background-color: #fff4db;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  box-shadow: 10px 10px 0px #8d8d8d;
+}
+
+#box1 {
+  height: 290px;
+  width: 400px;
+  background-color: ;
+}
+#box1a {
+  height: 290px;
+  width: 100px;
+  float: left;
+}
+#box1aa {
+  height: 140px;
+  width: 100px;
+}
+#box1ab {
+  height: 10px;
+  width: 100px;
+}
+#box1ac {
+  height: 140px;
+  width: 100px;
+}
+#box1b {
+  height: 290px;
+  width: 10px;
+  float: left;
+}
+#box1c {
+  height: 290px;
+  width: 290px;
+  float: left;
+}
+
+#box2 {
+  height: 10px;
+  width: 400px;
+}
+
+#box3 {
+  height: 100px;
+  width: 400px;
+}
+#box3a {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+#box3b {
+  height: 100px;
+  width: 10px;
+  float: left;
+}
+#box3c {
+  height: 100px;
+  width: 260px;
+  float: left;
+}
+#box3d {
+  height: 100px;
+  width: 10px;
+  float: left;
+}
+#box3e {
+  height: 100px;
+  width: 20px;
+  float: left;
+}
+#box3ea {
+  height: 45px;
+  width: 20px;
+}
+#box3eb {
+  height: 10px;
+  width: 20px;
+}
+#box3ec {
+  height: 45px;
+  width: 20px;
+}

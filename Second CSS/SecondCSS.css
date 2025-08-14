@@ -1,0 +1,29 @@
+body {
+  background-image:url("images/Grey_Background.jpg");
+  font-family: "Tahoma";
+}
+h1 {
+  font-style: italic;
+  background-color: #AFD8C2;
+  border: 3px solid #359D68;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-indent: 25px;
+}
+h1:nth-child(1){
+  color: #E38385;
+}
+h1:nth-child(3){
+  color: #B291E7;
+}
+p {
+  font-size: 15px;
+  text-indent: 25px;
+  color: #EFE8B5
+}
+#makeRed {
+  color: #E38385;
+  font-style: italic;
+  font-weight: bold;
+  word-spacing: 10px;
+}
